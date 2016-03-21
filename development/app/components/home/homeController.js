@@ -17,7 +17,7 @@ angular.module('helloAngular.controllers')
 
             $scope.data = {
                 messages: [],
-                rooms: ["Work", "Sport", "COD4"]
+                rooms: ["Gastles NodeJS", "Gastles Angular", "Work", "Sport", "Random Zever"]
             };
             $scope.dataService = dataService;
 
