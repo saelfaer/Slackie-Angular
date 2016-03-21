@@ -4,7 +4,7 @@ angular.module('helloAngular.services')
         function dataService() {
 
             var service = {
-                name: "Nicola",
+                name: "Username",
                 room: ""
             };
 
