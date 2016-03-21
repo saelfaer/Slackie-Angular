@@ -1,0 +1,8 @@
+<md-list-item class="md-3-line">
+    <img ng-src="{{dataService.getAvatar(message.Name)}}" class="md-avatar" alt="{{message.Name}}">
+    <div class="md-list-item-text" layout="column">
+        <h3>{{message.Name}}</h3>
+        <h4>{{message.Content}}</h4>
+        <p>{{message.Timestamp}}</p>
+    </div>
+</md-list-item>
