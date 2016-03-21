@@ -1,4 +1,4 @@
-# Build slackie in ReactJS #
+# Build slackie in AngularJS #
 
 **Install the dependencies**
 
