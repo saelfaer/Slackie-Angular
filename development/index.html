@@ -19,11 +19,23 @@
     <md-content layout="column" flex>
         <md-sidenav class="md-sidenav-left" md-component-id="left">
             <md-toolbar>
-                <h1 class="md-toolbar-tools">Rooms</h1>
+                <h2 class="md-toolbar-tools">Rooms</h2>
             </md-toolbar>
             <md-content>
                 <md-list-item ng-repeat="room in data.rooms" ng-click="toggleRoom(room)">
                     <p> {{ room }} </p>
+                </md-list-item>
+            </md-content>
+            <md-toolbar>
+                <h2 class="md-toolbar-tools">User</h2>
+            </md-toolbar>
+            <md-content>
+                <md-list-item>
+                    <md-input-container class="md-icon-float md-block">
+                        <label>Username</label>
+                        <md-icon aria-label="Username" class="material-icons">person</md-icon>
+                        <input  ng-model="dataService.name" type="text">
+                    </md-input-container>
                 </md-list-item>
             </md-content>
         </md-sidenav>
@@ -32,7 +44,7 @@
                 <md-button class="md-icon-button" ng-click="toggleLeftNav()">
                     <md-icon aria-label="Menu" class="material-icons">menu</md-icon>
                 </md-button>
-                <h2>Slackie</h2>
+                <h1>Slackie</h1>
             </div>
         </md-toolbar>
         <md-content id="content" layout="column">
